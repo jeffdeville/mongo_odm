@@ -7,7 +7,7 @@ module MongoODM
 
       module InstanceMethods
         def eql?(other)
-          # Comparing attributes manually since Ruby Mongo driver doesn't support DBRef objects comparison
+          # Comparing attributes manually since Ruby Mongo driver doesn't support DBRef objects comparison 
           return false if attributes.keys != other.attributes.keys
           attributes.each_pair do |key, value|
             if value.is_a?(BSON::DBRef) and other.attributes[key].is_a?(BSON::DBRef)
