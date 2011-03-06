@@ -42,3 +42,5 @@ module MongoODM
     end
   end
 end
+
+require 'mongo_odm/document/validations/uniqueness'
