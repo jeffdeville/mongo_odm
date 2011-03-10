@@ -26,7 +26,7 @@ module MongoODM
     end
     
     def _set_cursor
-      @cursor = @klass.collection.find(@selector, @opts)
+      @cursor = @klass.collection.find(@selector, @opts.clone)
     end
     
     def _merge_criteria(selector, opts)
