@@ -44,6 +44,7 @@ Gem::Specification.new do |s|
     "lib/mongo_odm/document/persistence.rb",
     "lib/mongo_odm/document/timestamps.rb",
     "lib/mongo_odm/document/validations.rb",
+    "lib/mongo_odm/document/validations/uniqueness.rb",
     "lib/mongo_odm/errors.rb",
     "lib/mongo_odm/railtie.rb",
     "lib/mongo_odm/version.rb",
