@@ -51,7 +51,7 @@ end
 class Array
   def self.type_cast(value)
     return nil if value.nil?
-    value.to_a.map {|elem| MongoODM.instanciate(elem)}
+    Array(value).map {|elem| MongoODM.instanciate(elem)}
   end
   
   def to_mongo
